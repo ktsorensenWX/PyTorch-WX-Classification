@@ -1,7 +1,7 @@
 # PyTorch Weather Classification
 
 ## Objective
-Developing a Convolutional Neural Network (CNN) capable of matching (to start) ~85% accuracy with a select group of weather phenomena. This will be converted into an application and applied both on my personal website and for later use elsewhere.
+Developing a Convolutional Neural Network (CNN) capable of matching (to start) ~85% accuracy with a select group of weather phenomena. This will be converted into an application and applied both on my personal website and for later use elsewhere. Some of the code will be partially from PyTorch's tutorials, such as "https://pytorch.org/tutorials/beginner/data_loading_tutorial.html" and "https://pytorch.org/tutorials/beginner/basics/data_tutorial.html".
 
 ## Statement
 This original project was conducted using TensorFlow and is available on my GitHub under 'CNN-Django-Application', which does a similar job as this, but is less configurable.
