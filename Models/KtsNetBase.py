@@ -5,7 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 ####################################################################
-# Model
+# Model v1
 
 """
 Structure: --> my structure to build here
@@ -16,6 +16,7 @@ Structure: --> my structure to build here
     5) Conv 3 - Valid padding; kernel (5x5)
     6) Pool (Max) 3
     7) Dense (FCN) w/ ReLU
+    8) Dence (FCN) output
 """;
 
 class KtsNet_v1(nn.Module):
@@ -68,6 +69,22 @@ class KtsNet_v1(nn.Module):
 
         return x
 
-# Testing linkage
-def tester(x):
-    print(x)
+####################################################################
+# Model v2
+
+"""
+Structure: --> my structure to build here
+    1) Conv 1 - Valid padding; kernel (5x5)
+    2) Pool (Max) 1 
+    3) Conv 2 - Valid padding; kernel (5x5)
+    4) Pool (Max) 2
+    5) Conv 3 - Valid padding; kernel (5x5)
+    6) Pool (Max) 3
+    7) Dense (FCN) w/ ReLU
+    8) Dence (FCN) output
+""";
+
+# Model will incorporate deeper layers for finer feature extractions
+class KtsNet_v2(nn.Module):
+    def __init__(self, in_channels,  num_classes=0):
+        super(self, KtsNet_v2).__init__()
